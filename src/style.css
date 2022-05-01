@@ -8,4 +8,43 @@ body {
     color: white;
     background-image: url('/src/images/background.jpg');
     background-size: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+div#content {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+header h1 {
+    color: aqua;
+    grid-column: 1 / span 4;
+}
+
+nav.nav-bar {
+    grid-column: 1 /span 4;
+    grid-row: 2;
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, calc(100vw/3));
+}
+
+div.welcome {
+    display: grid;
+}
+
+footer {
+    display: grid;
 }
