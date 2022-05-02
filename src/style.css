@@ -14,13 +14,13 @@ body {
 
 div#content {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: repeat(4, 25vw);
     grid-template-rows: repeat(4, 25vh);
     grid-template-areas: 
-        "header"
-        "body"
-        "body"
-        "footer";
+        "header header header header"
+        ". body body ."
+        ". body body ."
+        "footer footer footer footer";
     
 }
 
