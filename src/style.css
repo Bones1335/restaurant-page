@@ -7,31 +7,29 @@
 body {
     color: white;
     background-image: url('/src/images/background.jpg');
-    background-size: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    background-size: 100vw;
 }
 
 div#content {
     display: grid;
-    grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: repeat(4, 25vh);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
         "header header header header"
         ". body body ."
         ". body body ."
         "footer footer footer footer";
+    align-content: space-between;
     
 }
 
 header {
     grid-area: header;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     background-color: rgba(127, 127, 127, .5);
-    height: 25vh;
 }
 
 header h1 {
@@ -59,10 +57,12 @@ div.welcome {
     display: grid;
 }
 
+
 footer {
     color: aqua;
     grid-area: footer;
-    align-self: center;
+    align-self: end;
+    margin: 0 0 15px 0;
 }
 
 a {
