@@ -15,6 +15,7 @@ body {
 div#content {
     display: flex;
     flex-direction: column;
+    
 }
 
 header {
@@ -22,16 +23,21 @@ header {
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+    margin: 25px 0 0 0;
 }
 
 header h1 {
     color: aqua;
     grid-column: 1 / span 4;
+    font-size: 6rem;
 }
 
 nav.nav-bar {
     grid-column: 1 /span 4;
     grid-row: 2;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 15px 0 0 0;
 }
 
 ul {
