@@ -7,7 +7,7 @@
 body {
     color: white;
     background-image: url('/src/images/background.jpg');
-    background-size: 100vw;
+    background-size: 100%;
 }
 
 div#content {

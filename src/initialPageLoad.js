@@ -19,6 +19,7 @@ function createHeader() {
     
     content.appendChild(header);
     header.appendChild(h1Header);
+    header.appendChild(createNavBar());
 }
 
 function createNavBar() {
@@ -46,12 +47,11 @@ function createNavBar() {
 
     ul.appendChild(liContact);
    
-    content.appendChild(navBar);
+    return navBar
 }
 
 function loadPage() {
     createHeader();
-    createNavBar();
 }
 
 export { loadPage }
