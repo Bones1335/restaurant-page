@@ -68,7 +68,32 @@ function createWelcomeDiv() {
     return welcomeDiv
 }
 
+function createFooter() {
+    const footer = document.createElement('footer');
+        footer.classList.add('copyright')
+    
+    const ul = document.createElement('ul');
 
+    footer.appendChild(ul);
+
+    const li1 = document.createElement('li');
+        li1.textContent = 'Home';
+
+    ul.appendChild(li1);
+
+    const li2 = document.createElement('li');
+        li2.textContent = 'Menu';
+    
+    ul.appendChild(li2);
+
+    const li3 = document.createElement('li');
+        li3.textContent = '';
+
+    ul.appendChild(li3);
+
+
+    return footer
+}
 
 function loadPage() {
     content.appendChild(createHeader());
