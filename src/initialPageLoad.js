@@ -40,6 +40,12 @@ function createNavBar() {
     
     ul.appendChild(liMenu);
 
+    const liContact = document.createElement('li');
+        liContact.classList.add('contactBtn');
+        liContact.textContent = 'Contact';
+
+    ul.appendChild(liContact);
+   
     content.appendChild(navBar);
 }
 
