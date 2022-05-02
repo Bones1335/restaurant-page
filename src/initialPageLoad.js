@@ -77,12 +77,12 @@ function createFooter() {
     footer.appendChild(ul);
 
     const li1 = document.createElement('li');
-        li1.textContent = 'Home';
+        li1.textContent = 'Photo by "shawnanggg" on "Unsplash"'; // needs a tags for links to the sight
 
     ul.appendChild(li1);
 
     const li2 = document.createElement('li');
-        li2.textContent = 'Menu';
+        li2.textContent = 'Copyright @Me.github';
     
     ul.appendChild(li2);
 
@@ -90,7 +90,6 @@ function createFooter() {
         li3.textContent = '';
 
     ul.appendChild(li3);
-
 
     return footer
 }
