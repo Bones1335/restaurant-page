@@ -31,18 +31,21 @@ function createNavBar() {
     navBar.appendChild(ul);
 
     const liHome = document.createElement('li');
+        liHome.id = 'home';
         liHome.classList.add('homeBtn');
         liHome.textContent = 'Home';
 
     ul.appendChild(liHome);
 
     const liMenu = document.createElement('li');
+        liMenu.id = 'menu';
         liMenu.classList.add('menuBtn');
         liMenu.textContent = 'Menu';
     
     ul.appendChild(liMenu);
 
     const liContact = document.createElement('li');
+        liContact.id = 'contact';
         liContact.classList.add('contactBtn');
         liContact.textContent = 'Contact';
 
