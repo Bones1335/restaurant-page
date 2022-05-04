@@ -52,7 +52,7 @@ ul {
     grid-template-columns: repeat(3, calc(100vw/3));
 }
 
-div.welcome {
+main.welcome {
     grid-area: body;
     display: grid;
 }

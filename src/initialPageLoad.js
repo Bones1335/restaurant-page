@@ -55,7 +55,7 @@ function createNavBar() {
 }
 
 function createWelcomeDiv() {
-    const welcomeDiv = document.createElement('div');
+    const welcomeDiv = document.createElement('main');
         welcomeDiv.classList.add('welcome');
 
     const h2 = document.createElement('h2');
